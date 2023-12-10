@@ -1,0 +1,77 @@
+
+        EXPLODING KITTENS
+[card composition and overview]
+
+In total 56 cards.
+
+------------------------------------------------|
+SIMPLE CARDS (20 pcs. [4 of each])
+    HAIRY POTATO CAT
+        Subtitle: No subtitle,
+        Description: This is a cat card and is powerless on its own.
+                     Play two hairy potato cat as a pair to steal a
+                     random card from another player.
+
+    BEARD CARD
+        Subtitle: No subtitle,
+        Description: This is a cat card and is powerless on its own.
+                     Play two beard cats as a pair to steal a
+                     random card from another player.
+
+    TACOCAT
+        Subtitle: No subtitle,
+        Description: This is a cat card and is powerless on its own.
+                     Play two tacocats as a pair to steal a
+                     random card from another player.
+
+    CATTERMELON
+        Subtitle: No subtitle,
+        Description: This is a cat card and is powerless on its own.
+                     Play two cattermelons as a pair to steal a
+                     random card from another player.
+
+    RAINBOW-RALPHING CAT
+        Subtitle: No subtitle,
+        Description: This is a cat card and is powerless on its own.
+                     Play two rainbow-ralphing cats as a pair to steal a
+                     random card from another player.
+
+
+------------------------------------------------|
+ACTION CARDS (26 pcs.)
+    SHUFFLE (4 pcs.)
+        Subtitle: {custom for each card}
+        Description: Shuffle the draw pile.
+
+    FAVOR (4 pcs.)
+        Subtitle: {custom for each card}
+        Description: One player must give you a card of their choice.
+
+    ATTACK (4 pcs.)
+        Subtitle: {custom for each card}
+        Description: Do not draw any cards. Force the next player to
+        take two turns.
+
+    SKIP (4 pcs.)
+        Subtitle: {custom for each card}
+        Description: End your turn without drawing a card.
+
+    SEE THE FUTURE (5 pcs.)
+        Subtitle: {custom for each card}
+        Description: Privately view the top three cards of the pile.
+
+    NOPE (5 pcs.)
+        Subtitle: {custom for each card}
+        Description: Stop the action of another player. You can play
+        this at any time.
+
+------------------------------------------------|
+SPECIAL CARDS (10 pcs.)
+    DEFUSE CARD (6 pcs.)
+        Subtitle: {custom for each card}
+        Description: Instead of exploding, secretly put an exploding
+        kitten back into the draw pile.
+
+    EXPLODING KITTEN (4 pcs.)
+        Subtitle: No subtitle,
+        Description: Show this card immediately.
