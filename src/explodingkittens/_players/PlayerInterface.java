@@ -9,4 +9,6 @@ import explodingkittens._cards.std.BasicCard;
 public interface PlayerInterface {
     void makeTurn();
     void playCard(BasicCard card);
+
+    String getName();
 }

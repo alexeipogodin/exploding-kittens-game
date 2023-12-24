@@ -7,11 +7,14 @@ import explodingkittens._cards.std.BasicCard;
  * card's functionality.
  */
 public class ExplodingKittenCard extends BasicCard {
+    private static final String DESCRIPTION =
+            "Show this card immediately.";
     /**
      * Kicks of the specified player if he doesn't have a
      * defuse card.
      */
-    public void explode() {
-
+    public ExplodingKittenCard() {
+        super();
+        setDescription(DESCRIPTION);
     }
 }

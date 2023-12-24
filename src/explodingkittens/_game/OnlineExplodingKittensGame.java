@@ -9,8 +9,13 @@ public class OnlineExplodingKittensGame extends Game {
      * @param playersCount playersCount stands for the number of players the created
      * game is supposed to have.
      */
-    public OnlineExplodingKittensGame(int playersCount) {
-        super(playersCount);
+    public OnlineExplodingKittensGame(String[] playersNames) {
+        super(playersNames);
+    }
+
+    @Override
+    public void addPlayer(String name) {
+
     }
 
     /**

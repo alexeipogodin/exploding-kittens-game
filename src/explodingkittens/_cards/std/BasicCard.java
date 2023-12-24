@@ -24,7 +24,7 @@ public abstract class BasicCard implements CardInterface {
     }
 
     public BasicCard() {
-        // Set a subtitle additionally
+        title = this.getClass().getSimpleName();
     }
 
     /**
@@ -45,5 +45,16 @@ public abstract class BasicCard implements CardInterface {
     @Override
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String toJson() {
+        StringBuilder json = new StringBuilder("{\"" + getTitle() + "\":{");
+        json.append("\"description\":").append("\"" + description + "\"").append("}}");
+        return json.toString();
     }
 }

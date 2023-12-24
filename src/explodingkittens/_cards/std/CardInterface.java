@@ -20,4 +20,5 @@ public interface CardInterface {
      * @return {@code String} representing card's description.
      */
     String getDescription();
+    void setDescription(String description);
 }
