@@ -1,16 +1,12 @@
 package explodingkittens._game;
 
-import explodingkittens._cards.cats.Cattermelon;
-import explodingkittens._cards.defuse.DefuseCard;
-import explodingkittens._cards.explode.ExplodingKittenCard;
-import explodingkittens._cards.std.BasicCard;
-import explodingkittens._deck.Deck;
-import explodingkittens._deck.DrawPile;
-import explodingkittens._players.HumanPlayer;
+import explodingkittens.exceptions.NoPlayerFound;
+import explodingkittens.models._cards.defuse.DefuseCard;
+import explodingkittens.models._cards.explode.ExplodingKittenCard;
+import explodingkittens.models._cards.std.BasicCard;
+import explodingkittens.models._deck.DrawPile;
 import explodingkittens._players.Player;
-import explodingkittens._players.PlayerInterface;
 import explodingkittens.utils.NicknameGenerator;
-import explodingkittens.utils.TextIO;
 
 
 import java.util.*;
@@ -19,20 +15,21 @@ import java.util.*;
  * Implements common methods for bot offline and online games.
  */
 public abstract class Game implements GameInterface {
+    public static final int MIN_PLAYERS = 2;
+    public static final int MAX_PLAYERS = 5;
     private DrawPile drawPile;
     private final ArrayList<Player> players = new ArrayList<>();
 
     /**
-     * Standard construnctor implementation.
+     * Standard constructor implementation.
      * @param playersNames stands for the number of players the created
      * game is supposed to have.
      */
     public Game(String[] playersNames) {
-        if (playersNames.length < 2)
-            throw new IllegalArgumentException("The minimum number of players is 2");
-        else if (playersNames.length > 5) {
-            throw new IllegalArgumentException("The maximum number of players is 5");
-        }
+        if (playersNames.length < MIN_PLAYERS)
+            throw new IllegalArgumentException("The minimum number of players is " + MIN_PLAYERS);
+        else if (playersNames.length > MAX_PLAYERS)
+            throw new IllegalArgumentException("The maximum number of players is " + MAX_PLAYERS);
 
         for (String name: playersNames)
             addPlayer(name);
@@ -72,6 +69,21 @@ public abstract class Game implements GameInterface {
         return players;
     }
 
+    public boolean hasWinner() {
+        return false;
+    }
+
+    public void handleTurn(Player player, BasicCard card) {
+    }
+
+    public void handleTurn(Player player, Player target, BasicCard card) {
+
+    }
+
+    public Player getRandomPlayer() {
+        return players.get((new Random()).nextInt(players.size()));
+    }
+
     /**
      * Adds a player to the game.
      * @param player the player to be added.
@@ -107,8 +119,10 @@ public abstract class Game implements GameInterface {
         return json.toString();
     }
 
-    public static void main(String[] args) {
-        Game game = new OfflineExplodingKittensGame(5);
-        System.out.println(game.toJson());
+    public Player nextPlayer(Player player) throws NoPlayerFound {
+        if (players.contains(player))
+            return (players.getLast() == player) ? players.getFirst() : players.get(players.indexOf(player) + 1);
+        else
+            throw new NoPlayerFound(player);
     }
 }

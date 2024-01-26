@@ -40,5 +40,6 @@ public class OfflineExplodingKittensGame extends Game {
      */
     @Override
     public void startUp() {
+
     }
 }

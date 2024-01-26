@@ -1,7 +1,7 @@
 package explodingkittens._players;
 
-import explodingkittens._cards.std.BasicCard;
-import explodingkittens._deck.PlayerDeck;
+import explodingkittens.models._cards.std.BasicCard;
+import explodingkittens.models._deck.PlayerDeck;
 
 
 /**

@@ -1,6 +1,6 @@
 package explodingkittens._players;
 
-import explodingkittens._cards.std.BasicCard;
+import explodingkittens.models._cards.std.BasicCard;
 
 /**
  * An interface specifying all the methods shared by
