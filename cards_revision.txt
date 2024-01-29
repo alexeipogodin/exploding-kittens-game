@@ -60,7 +60,7 @@ ACTION CARDS (26 pcs.)
         Subtitle: {custom for each card}
         Description: Privately view the top three cards of the pile.
 
-    NOPE (5 pcs.)1
+    NOPE (5 pcs.)
         Subtitle: {custom for each card}
         Description: Stop the action of another player. You can play
         this at any time.

@@ -1,6 +1,6 @@
 package explodingkittens.exceptions;
 
-import explodingkittens._players.Player;
+import explodingkittens.mvc.model._players.Player;
 
 public class NoPlayerFound extends Exception {
     public NoPlayerFound(Player player) {
